@@ -15,7 +15,7 @@ a {
   text-decoration: none;
   display: block;
   color: #fff;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 h1,
@@ -39,6 +39,7 @@ h3 {
   position: relative;
   color: #fff;
 }
+
 .splash::after {
   content: "";
   position: absolute;
@@ -48,6 +49,7 @@ h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .splash .splash-inner {
   z-index: 1;
   position: absolute;
@@ -56,6 +58,7 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .splash .splash-inner .page-subtitle {
   font-size: 40px;
   font-weight: 200;
@@ -63,6 +66,7 @@ h3 {
   text-align: center;
   letter-spacing: -1px;
 }
+
 .splash .splash-inner .page-title {
   font-size: 75px;
   font-weight: 700;
@@ -70,6 +74,7 @@ h3 {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 .splash .splash-inner .btn {
   text-transform: uppercase;
   font-size: 18px;
@@ -83,8 +88,9 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 5%;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .splash .splash-inner .btn:hover {
   transform: translateX(-50%) scale(1.2);
 }
@@ -92,28 +98,32 @@ h3 {
 .container {
   padding-top: 2%;
 }
+
 .container .navigation {
   z-index: 1;
 }
+
 .container .navigation ul {
   text-align: right;
 }
+
 .container .navigation ul li {
   display: inline-block;
   list-style: none;
   margin: 2%;
 }
+
 .container li a:hover {
   color: #fed136;
 }
+
 .container .logo {
   z-index: 1;
 }
+
 .container .logo a {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   cursor: pointer;
   color: #fed136;
   font-size: 34px;
 }
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBZ0JBLFNBQUE7QUFFQTtFQUNJLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNmSjs7QURrQkE7RUFDSSxvQ0FaUTtFQWFSLGVBQUE7QUNmSjs7QURrQkE7RUFDSSxxQkFBQTtFQUNBLGNBQUE7RUFDQSxXQXZCVTtFQXdCVixnQkFBQTtBQ2ZKOztBRGtCQTs7O0VBR0ksVUFBQTtBQ2ZKOztBRGtCQTs7O0VBR0ksa0NBbENTO0FDbUJiOztBRGtCQSxTQUFBO0FBRUE7RUFDSSxrSkFBQTtFQUNBLDJCQUFBO0VBQ0Esc0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQS9DVTtBQytCZDtBRGtCSTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxvQ0FBQTtBQ2hCUjtBRG1CSTtFQUNJLFVBQUE7RUFDQSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsZ0NBQUE7RUFDQSxrQkFBQTtBQ2pCUjtBRG1CUTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkFBQTtBQ2pCWjtBRG9CUTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtBQ2xCWjtBRHFCUTtFQUNJLHlCQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBdEZBO0VBdUZBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLDJCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0FDbkJaO0FEcUJZO0VBQ0ksc0NBQUE7QUNuQmhCOztBRHlCQTtFQUNJLGVBQUE7QUN0Qko7QUR3Qkk7RUFDSSxVQUFBO0FDdEJSO0FEd0JRO0VBQ0ksaUJBQUE7QUN0Qlo7QUR3Qlk7RUFDSSxxQkFBQTtFQUNBLGdCQUFBO0VBQ0EsVUFBQTtBQ3RCaEI7QUQyQkk7RUFDSSxjQUFBO0FDekJSO0FENEJJO0VBQ0ksVUFBQTtBQzFCUjtBRDRCUTtFQUNJLHNDQUFBO0VBQ0EsZUFBQTtFQUNBLGNBbklBO0VBb0lBLGVBQUE7QUMxQloiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

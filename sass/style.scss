@@ -1,0 +1,146 @@
+/*Variables*/
+// 
+// sans-serif;
+// 
+// sans-serif;
+// 
+// $color-two: #fdcb6e;
+// $color-three: #fd79a8;
+// $text-color: #2d3436;
+$color-light: #fff;
+$color-one: #fed136;
+$font-title: 'Raleway',
+sans-serif;
+$font-text: 'Open Sans',
+sans-serif;
+
+/*Global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-text;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: $color-light;
+    transition: .3s;
+}
+
+h1,
+h2,
+.btn {
+    margin: 4%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-title;
+}
+
+/*Header*/
+
+.splash {
+    background-image: url("https://images.pexels.com/photos/163194/old-retro-antique-vintage-163194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    color: $color-light;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .splash-inner {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .page-subtitle {
+            font-size: 40px;
+            font-weight: 200;
+            font-style: italic;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        .page-title {
+            font-size: 75px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: $color-one;
+            text-align: center;
+            width: 240px;
+            height: 65px;
+            line-height: 65px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 5%;
+            transition: .3s;
+
+            &:hover {
+                transform: translateX(-50%) scale(1.2);
+            }
+        }
+    }
+}
+
+.container {
+    padding-top: 2%;
+
+    .navigation {
+        z-index: 1;
+
+        ul {
+            text-align: right;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                margin: 2%;
+            }
+        }
+    }
+
+    li a:hover {
+        color: #fed136;
+    }
+
+    .logo {
+        z-index: 1;
+
+        a {
+            font-family: 'Dancing Script', cursive;
+            cursor: pointer;
+            color: $color-one;
+            font-size: 34px;
+        }
+    }
+}
