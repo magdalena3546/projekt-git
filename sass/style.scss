@@ -1,11 +1,4 @@
 /*Variables*/
-// 
-// sans-serif;
-// 
-// sans-serif;
-// 
-// $color-two: #fdcb6e;
-// $color-three: #fd79a8;
 $text-color: #777;
 $section-title-color:#222222;
 $color-light: #fff;
@@ -26,6 +19,12 @@ sans-serif;
 body {
     font-family: $font-text;
     font-size: 16px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 a {
@@ -189,7 +188,8 @@ h5 {
         .service {
             padding: 3%;
             text-align: center;
-            position: relative;
+            display: flex;
+            flex-direction: column;
             p {
                 font-size: 14px;
                 color: $text-color;
@@ -200,10 +200,8 @@ h5 {
 }
 
 .service .icon {
-    position: absolute;
-    top: -35%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0 auto 5%;
     border-radius: 50%;
     height: 70px;
     width: 70px;
@@ -322,4 +320,217 @@ h5 {
     }
 }
 
+/*Media*/
 
+@media (orientation: portrait) and (max-width: 912px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 60px;
+    }
+        .page-subtitle {
+        font-size: 30px;
+        }
+        
+    }
+
+}
+
+@media  (max-width: 780px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 40px;
+        }
+    }
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media  (max-width: 540px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 35px;
+        }
+        .section-title {
+            font-size: 25px;
+        }
+        .btn {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+        }
+    }
+    .section-title {
+        font-size: 30px;
+    }
+
+    .container .navigation ul {
+        text-align: left;
+        margin-top: 1%;
+    }
+    .service .icon {
+        margin: 0 auto 2%;
+    }
+    .project .image {
+        height: 200px;
+    }
+
+    .page-footer{
+        .sign{
+            margin-bottom: 2%;
+        }
+    }
+}
+
+@media  (max-width: 393px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 30px;
+        white-space: inherit;
+        line-height: 1.5;
+        }
+        .page-subtitle {
+            font-size: 25px;
+        }
+        .btn {
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+    .project .image {
+        max-height: 320px;
+    } 
+
+    .project {
+        height: 350px;
+        .work-description {
+            h6 {
+            font-size: 14px;
+            }
+           
+        }
+    }
+    h5 {
+        font-size: 16px;
+    }
+}
+
+@media  (max-width: 375px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 20px;
+        white-space: inherit;
+        line-height: 1.5;
+        }
+        .page-subtitle {
+            font-size: 16px;
+        }
+        .btn {
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+        }
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .page-footer{ 
+        .sign p {
+            font-size: 12px;
+        }
+        ul li {
+        width: 25px;
+        height: 25px;
+            i {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 915px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 50px;
+        }
+        .page-subtitle {
+            font-size: 30px;
+        }
+        .btn {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+        }
+    }
+    section > .container {
+        margin-top: 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 740px) {
+    .splash .splash-inner {
+        .page-title {
+        font-size: 30px;
+        }
+        .page-subtitle {
+            font-size: 20px;
+        }
+        .btn {
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+    .container .navigation ul {
+        text-align: left;
+        margin-top: 1%;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .page-footer{ 
+        .sign {
+            margin-bottom: 2%;
+            p {
+                font-size: 12px;
+            }
+        } 
+        ul li {
+        width: 25px;
+        height: 25px;
+            i {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+}
