@@ -272,3 +272,54 @@ h5 {
     }
 }
 
+/*Footer*/
+.page-footer {
+    .container {
+        padding-top: 0;
+        .row {
+            justify-content: space-around;
+            align-content: center;
+        }
+    }
+}
+
+.page-footer {
+    margin: 2% 0;
+    .sign {
+        display: flex;
+        margin: auto auto;
+        p{
+            font-size: 14px;
+            color: $text-color;
+            font-weight: 700;
+        }
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+            margin-left: 2%;
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+            font-size: 0;
+            background-color: $section-title-color;
+            border-radius: 50%;
+            text-align: center;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            i {
+                font-size: 20px;
+                line-height: 40px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
